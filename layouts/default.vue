@@ -21,12 +21,12 @@
       'my-auto p-2 hover:bg-gray-500 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-t-2 max-sm:border-black max-sm:text-center': !submenu}">LogIn</NuxtLink>
       <NuxtLink to="/logout" class="my-auto p-2 hover:bg-gray-500 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-black max-sm:text-canter">LogOut</NuxtLink>
     </nav>
-    <div v-if = "!burger" @click = "switch_burger" class="max-sm:flex max-sm:flex-col max-sm:mr-8 max-sm:items-center max-sm:justify-between max-sm:items-center max-sm:w-8 max-sm:h-6">
+    <div v-if = "!burger" @click = "switch_burger" class="max-sm:flex max-sm:flex-col max-sm:mr-8 max-sm:my-auto max-sm:justify-between max-sm:items-center max-sm:w-8 max-sm:h-6">
       <span class="h-[3px] w-full bg-blue-950"></span>
       <span class="h-[3px] w-full bg-blue-950"></span>
       <span class="h-[3px] w-full bg-blue-950"></span>
     </div>
-    <div v-else class="max-sm:flex max-sm:flex-col max-sm:mr-8 max-sm:justify-between max-sm:items-center max-sm:w-8 max-sm:h-6" @click = "switch_burger">
+    <div v-else class="max-sm:flex max-sm:flex-col max-sm:mr-8 max-sm:justify-between max-sm:my-auto max-sm:w-8 max-sm:h-6" @click = "switch_burger">
       <span class="h-[3px] w-full bg-black rotate-45 relative top-[9px]"></span>
       <span class="h-[3px] w-full bg-black opacity-0"></span>
       <span class="h-[3px] w-full bg-black relative bottom-3 rotate-[-45deg]"></span>
